@@ -1,14 +1,14 @@
 "use client";
-import { Section } from "../shared/Section";
+import  Section  from "../shared/Section";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 function MentorshipAudience() {
   return (
-    <Section className="container mx-auto py-12 md:py-20 relative overflow-hidden ">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <Section className="container mx-auto py-8 md:py-12 relative overflow-hidden ">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center ">
         <motion.div
-          className="order-2 lg:order-1 relative w-full h-64 md:h-80 lg:h-96 xl:h-[28rem] max-w-lg mx-auto lg:max-w-none"
+          className="order-2 lg:order-1 relative w-full h-52 md:h-64 lg:h-80 xl:h-[24rem] max-w-lg mx-auto lg:max-w-none"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
