@@ -6,6 +6,19 @@ import Image from 'next/image'
 export const Hero = () => {
   return (
     <section className="container mx-auto py-12 md:py-20 relative overflow-hidden">
+      <div className='flex justify-between mx-auto px-6 pb-6'>
+        <Image
+          src={'/images/logo.svg'}
+          width={72}
+          height={48}
+          alt="Hero Image"
+          style={{ objectFit: 'contain' }}
+          className="rounded-lg"
+        />
+        <button className='border border-[#64cdf6] rounded-4xl font-bold px-8 h-16'>
+          Book a session
+        </button>
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
         <motion.div
           className="order-2 lg:order-1 text-center lg:text-left"
@@ -20,7 +33,7 @@ export const Hero = () => {
             Transform Your Skills. Empowering Your Future
           </p>
           <div className="flex justify-center lg:justify-start">
-            <Button className='text-lg px-8 py-4 rounded-full bg-gradient-to-l from-[#64cdf6] to-transparent backdrop-blur-md bg-white/30 cursor-pointer'>
+            <Button className='inline-flex items-center px-12 py-10 bg-gradient-to-r from-[#075E80] to-[#62CBF4] text-white text-xl font-medium rounded-full shadow-md'>
               Book a Session
             </Button>
           </div>
